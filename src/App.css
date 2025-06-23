@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import 'tailwindcss';
+
+.orange{
+    background-color: #E7816B;
+}
+
+.orangetext{
+    color: #E7816B;
+}
+
+
+.orangeHover{
+        background-color: #E7816B;
+}
+
+.orangeHover:hover{
+    background-color: hsl(11, 72%, 76%);
+}
+
+
+
+.jost{
+    font-family: 'Jost', sans-serif;
+}
+.jost400{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+.jost500{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+.jost700{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+
+.footerh1{
+    color: hsl(220, 1%, 54%);
+}
+
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+
+.grayish{
+    background-color: hsl(11, 72%, 66%, .1);
+}
+
+
+.grayishhover{
+    background-color: hsl(11, 72%, 66%, .1);
+}
+
+.grayishhover:hover{
+    background-color: #E7816B;
+    transition: ease 0.5s;
+    color: white;
+}
+
+.grayishhover:hover h1{
+    color: white;
+}
