@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom";
+import airfilImg from "/public/assets/app-design/desktop/image-airfilter.jpg";
+import eyecamImg from "/public/assets/app-design/desktop/image-eyecam.jpg";
+import faceitImg from "/public/assets/app-design/desktop/image-faceit.jpg";
+import toDoImg from "/public/assets/app-design/desktop/image-todo.jpg";
+import loopStuImg from "/public/assets/app-design/desktop/image-loopstudios.jpg";
 
+import webDesignImg from "/public/assets/home/desktop/image-web-design-small.jpg";
+import graphicDesignImg from "/public/assets/home/desktop/image-graphic-design.jpg";
 function AppDesign() {
   return (
     <>
       <div className="flex justify-center items-center mt-10 flex-col">
-        <div className="flex flex-col gap-5 justify-center items-center orange text-white 2xl:rounded-[20px] 2xl:w-[80rem] 2xl:h-[20rem] w-full h-[15rem] lg:h-[20rem] md:h-[20rem]">
+        <div
+          id="important"
+          className="flex flex-col gap-5 justify-center items-center orange text-white 2xl:rounded-[20px] 2xl:w-[80rem] 2xl:h-[20rem] w-full h-[15rem] lg:h-[20rem] md:h-[20rem]"
+        >
           <h1 className="2xl:text-5xl lg:text-5xl md:text-5xl text-3xl">
             App Design
           </h1>
@@ -17,7 +27,7 @@ function AppDesign() {
           <div className="grayishhover 2xl:rounded-[20px] lg:rounded-[20px] md:rounded-[20px] flex flex-col justify-center items-center">
             <img
               className="h-[25rem] w-full 2xl:rounded-t-[20px] lg:rounded-t-[20px] md:rounded-t-[20px]"
-              src="/src/assets/app-design/desktop/image-airfilter.jpg"
+              src={airfilImg}
               alt="Airfilter website"
             ></img>
             <h1 className="orangetext text-2xl py-5 jost500 uppercase mt-5">
@@ -31,7 +41,7 @@ function AppDesign() {
           <div className="grayishhover 2xl:rounded-[20px] lg:rounded-[20px] md:rounded-[20px] flex flex-col justify-center items-center">
             <img
               className="h-[25rem] w-full 2xl:rounded-t-[20px] lg:rounded-t-[20px] md:rounded-t-[20px]"
-              src="/src/assets/app-design/desktop/image-eyecam.jpg"
+              src={eyecamImg}
               alt="Eye Cam website"
             ></img>
             <h1 className="orangetext text-2xl py-5 jost500 uppercase mt-5">
@@ -45,7 +55,7 @@ function AppDesign() {
           <div className="grayishhover 2xl:rounded-[20px] lg:rounded-[20px] md:rounded-[20px] flex flex-col justify-center items-center">
             <img
               className="h-[25rem] w-full 2xl:rounded-t-[20px] lg:rounded-t-[20px] md:rounded-t-[20px]"
-              src="/src/assets/app-design/desktop/image-faceit.jpg"
+              src={faceitImg}
               alt="FaceIT website"
             ></img>
             <h1 className="orangetext text-2xl py-5 jost500 uppercase mt-5">
@@ -58,7 +68,7 @@ function AppDesign() {
           <div className="grayishhover 2xl:rounded-[20px] lg:rounded-[20px] md:rounded-[20px] flex flex-col justify-center items-center">
             <img
               className="h-[25rem] w-full 2xl:rounded-t-[20px] lg:rounded-t-[20px] md:rounded-t-[20px]"
-              src="/src/assets/app-design/desktop/image-todo.jpg"
+              src={toDoImg}
               alt="Todo website"
             ></img>
             <h1 className="orangetext text-2xl py-5 jost500 uppercase mt-5">
@@ -70,15 +80,16 @@ function AppDesign() {
           </div>
           <div className="grayishhover 2xl:rounded-[20px] lg:rounded-[20px] md:rounded-[20px] flex flex-col justify-center items-center">
             <img
-              className="h-[25rem] w-full 2xl:rounded-t-[20px] lg:rounded-t-[20px] md:rounded-t-[20px]"
-              src="/src/assets/app-design/desktop/image-loopstudios.jpg"
-              alt="LoopStudios website"
+              className="h-[25rem] w-full 2xl:rounded-t-[20px] lg:rounded-t-[20px] md:rounded-t-[20px] object-cover"
+              src={loopStuImg}
+              alt="Todo website"
             ></img>
             <h1 className="orangetext text-2xl py-5 jost500 uppercase mt-5">
               l o o p <span className="ml-2">s t u d i o s</span>
             </h1>
             <p className="text-[20px] py-5 text-center">
-              A VR experience app made for Loopstudios
+              A VR experience app that features cloud sync and is made with
+              LoopStudios
             </p>
           </div>
         </div>
@@ -93,11 +104,11 @@ function AppDesign() {
           >
             <div className="relative">
               <img
-                src="/src/assets/home/desktop/image-web-design-small.jpg"
+                src={webDesignImg}
                 alt="App Design"
                 className="w-full rounded-[15px]"
               />
-              <Link to={"/projects/web-design"}>
+              <Link to={"/projects/web-design#important"}>
                 <div className="hover:bg-orange-400/20 absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black/80 rounded-lg">
                   <h2 className="2xl:text-5xl lg:text-5xl md:text-4xl text-2xl font-bold jost500">
                     WEB DESIGN
@@ -110,12 +121,12 @@ function AppDesign() {
             </div>
             <div className="relative">
               <img
-                src="/src/assets/home/desktop/image-graphic-design.jpg"
+                src={graphicDesignImg}
                 alt="Graphic design"
                 className="w-full rounded-[15px]"
               />
 
-              <Link to={"/projects/graphic-design"}>
+              <Link to={"/projects/graphic-design#important"}>
                 <div className="hover:bg-orange-400/20 absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black/80 rounded-lg">
                   <h2 className="2xl:text-5xl lg:text-5xl md:text-3xl text-xl font-bold jost500">
                     GRAPHIC DESIGN
