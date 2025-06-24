@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import icon1 from "/public/assets/location icons/1.svg";
-import icon2 from "/public/assets/location icons/2.svg";
-import icon3 from "/public/assets/location icons/3.svg";
+import icon1 from "/public/assets/locationicons/1.svg";
+import icon2 from "/public/assets/locationicons/2.svg";
+import icon3 from "/public/assets/locationicons/3.svg";
 function ContactPage() {
   const [submit, setSubmit] = useState(false);
 
