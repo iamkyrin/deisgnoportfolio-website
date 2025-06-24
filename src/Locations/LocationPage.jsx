@@ -1,5 +1,5 @@
 import canadaImg from "/public/assets/locations/desktop/image-map-canada.png";
-import austImg from "/public/assets/locations/desktop/image-map-AUSTRALIA.png";
+import austImg from "/public/assets/locations/desktop/image-map-australia.png";
 import ukImg from "/public/assets/locations/desktop/image-map-united-kingdom.png";
 function LocationPage() {
   return (
