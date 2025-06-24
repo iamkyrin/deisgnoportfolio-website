@@ -3,9 +3,9 @@ import aboutHero from "/public/assets/about/mobile/image-about-hero.jpg";
 import aboutHeroDesk from "/public/assets/about/desktop/image-about-hero.jpg";
 import worldClass from "/public/assets/about/desktop/image-world-class-talent.jpg";
 import worldClassMobile from "/public/assets/about/mobile/image-world-class-talent.jpg";
-import icon1 from "/public/assets/location icons/1.svg";
-import icon2 from "/public/assets/location icons/2.svg";
-import icon3 from "/public/assets/location icons/3.svg";
+import icon1 from "/public/assets/locationicons/1.svg";
+import icon2 from "/public/assets/locationicons/2.svg";
+import icon3 from "/public/assets/locationicons/3.svg";
 import realDealImg from "/public/assets/about/mobile/image-real-deal.jpg";
 import realDealImgDesk from "/public/assets/about/desktop/image-real-deal.jpg";
 function AboutPage() {
