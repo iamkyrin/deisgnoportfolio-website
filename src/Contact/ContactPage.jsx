@@ -4,52 +4,6 @@ import { Link } from "react-router-dom";
 function ContactPage() {
   const [submit, setSubmit] = useState(false);
 
-    const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [submitting, setSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    
-    try {
-      const response = await fetch('http://localhost:5000/api/submit-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
-
-
-
   return (
     <>
       <div className="flex justify-center items-center mt-20">
@@ -66,7 +20,7 @@ function ContactPage() {
             </p>
           </div>
           <div className="flex justify-end gap-20">
-            <form onSubmit = {() => {setSubmit(true); handleSubmit} } className="flex flex-col text-white p-20 w-[40rem] gap-10">
+            <form onSubmit = {() => {setSubmit(true)} } className="flex flex-col text-white p-20 w-[40rem] gap-10">
               <label> Name: </label>
 
               <input

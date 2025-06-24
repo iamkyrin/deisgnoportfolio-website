@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import AboutPage from "./About/AboutPage"
+import logodark from "./assets/logo/logo-dark.png"
 function Navbar(){
 
 const [open, setOpen] = useState(false)
@@ -10,7 +11,7 @@ return(
     <div className="flex justify-between 2xl:px-85 w-full mt-20">
         <div>
             <a href = '/'>
-             <img src="src/assets/logo/logo-dark.png" alt="Business Logo" className="2xl:w-[15rem] lg:w-[15rem] md:w-[15rem] w-[13rem] ml-5 2xl:ml-0"/>
+             <img src={logodark} alt="Business Logo" className="2xl:w-[15rem] lg:w-[15rem] md:w-[15rem] w-[13rem] ml-5 2xl:ml-0"/>
             </a>
             
         </div>
