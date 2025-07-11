@@ -5,7 +5,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-> *"A responsive [type of website] solution with seamless page transitions and accessible UI components"*
+> *"A responsive multipage solution with accessible UI components"*
 
 ---
 
@@ -13,7 +13,7 @@
 
 | Page | Desktop | Mobile |
 |------|---------|--------|
-| Home | ![Home Desktop](screenshot-desktop-home.jpg) | ![Home Mobile](screenshot-mobile-home.jpg) |
+| Home | ![Home Desktop](<img width="1046" height="523" alt="Screenshot (284)" src="https://github.com/user-attachments/assets/1d860db0-e3cb-4f1d-958c-9c9970fb7c30" />) | ![Home Mobile](screenshot-mobile-home.jpg) |
 | About | ![About Desktop](screenshot-desktop-about.jpg) | ![About Mobile](screenshot-mobile-about.jpg) |
 
 ---
