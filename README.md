@@ -17,7 +17,7 @@ Check out More on the actual live website!
 ---
 
 ## LIVE DEMO
-- ▶️ **[Live Site][designoportfolio-website.netlify.app]**
+- ▶️ **[Live Site](designoportfolio-website.netlify.app)**
 
 ## 🏆 Challenge Overview
 
