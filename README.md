@@ -11,7 +11,7 @@
 
 ## 📸 Screenshots
 
-<img width="1046" height="523" alt="Screenshot (284)" src="https://github.com/user-attachments/assets/1d860db0-e3cb-4f1d-958c-9c9970fb7c30" /> | ![Home Mobile](screenshot-mobile-home.jpg)
+<img width="1046" height="523" alt="Screenshot (284)" src="https://github.com/user-attachments/assets/1d860db0-e3cb-4f1d-958c-9c9970fb7c30" />
 Check out More on the actual live website!
 
 ---
