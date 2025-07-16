@@ -4,12 +4,13 @@ import { connectDB } from "./config/db.js";
 import Form from "./models/form.model.js";
 import mongoose from "mongoose";
 import cors from "cors";
+import path from "path";
 const app = express();
 dotenv.config();
 const PORT = process.env.PORT || 4000;
 app.use(express.json());
 app.use(cors());
-
+const __dirname = path.resolve();
 app.get("/api/forms", async (req, res) => {
   try {
     const getForm = await Form.find({});
@@ -37,6 +38,14 @@ app.post("/api/forms", async (req, res) => {
     res.status(500).json({ success: false, message: "Internal server error" });
   }
 });
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/frontend/dist")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+  });
+}
 
 app.listen(PORT, (req, res) => {
   connectDB();
