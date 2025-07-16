@@ -5,6 +5,35 @@ import icon2 from "/public/assets/locationicons/2.svg";
 import icon3 from "/public/assets/locationicons/3.svg";
 function ContactPage() {
   const [submit, setSubmit] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value,
+    };
+    try {
+      const response = await fetch("http://localhost:4000/api/forms", {
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmit(true);
+        form.reset();
+      } else {
+        alert("Error Submitting");
+      }
+    } catch (error) {
+      console.error(error);
+      console.log("Could not send form data");
+      alert("Failed to connect to server");
+    }
+  };
 
   return (
     <>
@@ -23,18 +52,16 @@ function ContactPage() {
           </div>
           <div className="flex justify-end gap-20">
             <form
-              onSubmit={() => {
-                setSubmit(true);
-              }}
+              onSubmit={handleSubmit}
               className="flex flex-col text-white p-20 w-[40rem] gap-10"
             >
               <label> Name: </label>
 
               <input
                 className="border-b border-white outline-none text-xl"
-                type="name"
+                type="text"
+                name="name"
                 required
-                for="firstName"
                 placeholder="John Doe"
               ></input>
               <label> Email Address: </label>
@@ -42,8 +69,8 @@ function ContactPage() {
               <input
                 className="border-b border-white outline-none text-xl"
                 type="email"
+                name="email"
                 required
-                for="firstName"
                 placeholder="example@gmail.com"
               ></input>
               <label>Phone</label>
@@ -59,13 +86,15 @@ function ContactPage() {
               <input
                 className="border-b border-white outline-none text-xl"
                 type="tel"
+                name="phone"
                 placeholder="+123 456 789"
               ></input>
 
               <label>Message:</label>
               <input
                 className="border-b border-white outline-none text-xl h-20"
-                type="text"
+                type="message"
+                name="message"
                 placeholder="How can we help you?"
               ></input>
               <button
