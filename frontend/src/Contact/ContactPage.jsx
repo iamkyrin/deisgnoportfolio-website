@@ -29,8 +29,7 @@ function ContactPage() {
         alert("Error Submitting");
       }
     } catch (error) {
-      console.error(error);
-      console.log("Could not send form data");
+      console.error("Full error:", error);
       alert("Failed to connect to server");
     }
   };
@@ -93,7 +92,6 @@ function ContactPage() {
               <label>Message:</label>
               <input
                 className="border-b border-white outline-none text-xl h-20"
-                type="message"
                 name="message"
                 placeholder="How can we help you?"
               ></input>
